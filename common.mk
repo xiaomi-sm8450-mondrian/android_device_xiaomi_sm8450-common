@@ -164,6 +164,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.dolby.surround.enable=true \
     ro.vendor.audio.dolby.vision.support=true
 
+# Dolby Interface
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi \
