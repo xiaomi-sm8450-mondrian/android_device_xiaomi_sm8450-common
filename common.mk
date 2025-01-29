@@ -302,6 +302,9 @@ PRODUCT_PACKAGES += \
     WifiResTarget_cape \
     WifiResTarget_spf
 
+# Properties
+include $(DEVICE_PATH)/configs/props/product_prop.mk
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
