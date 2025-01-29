@@ -303,7 +303,7 @@ PRODUCT_PACKAGES += \
     WifiResTarget_spf
 
 # Properties
-include $(DEVICE_PATH)/configs/props/product_prop.mk
+include $(LOCAL_PATH)/configs/props/product_prop.mk
 
 # Partitions
 PRODUCT_PACKAGES += \
