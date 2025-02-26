@@ -13,6 +13,8 @@ ro.af.client_heap_size_kbyte=7168
 ro.audio.flinger_standbytime_ms=2000
 ro.audio.monitorRotation=true
 ro.vendor.audio.camera.loopback.support=true
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.vision.support=true
 ro.vendor.audio.feature.spatial=7
 ro.vendor.audio.gain.support=true
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
@@ -29,6 +31,8 @@ ro.vendor.audio.soundtrigger.xatx.gmm.user.level=54
 ro.vendor.audio.soundtrigger.xatx.vop.level=0
 ro.vendor.audio.support.sound.id=true
 vendor.audio.adm.buffering.ms=2
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.battery_listener.enable=true
@@ -90,6 +94,7 @@ ro.hardware.camera=xiaomi
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+ro.vendor.display.dolbyvision.support=true
 vendor.display.comp_mask=0
 vendor.display.disable_3d_adaptive_tm=0
 vendor.display.disable_excl_rect=0
@@ -113,6 +118,16 @@ vendor.display.vds_allow_hwc=0
 # Dolby Atmos
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
+
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
+ro.vendor.audio.dolby.dax.support=true
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+
+# Dolby Vision
+ro.vendor.audio.dolby.vision.support=true
+debug.config.media.video.dolby_vision_suports=true
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
