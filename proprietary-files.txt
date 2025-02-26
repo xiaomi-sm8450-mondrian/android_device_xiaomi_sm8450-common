@@ -2,6 +2,7 @@
 
 # Current blobs with ELF checks disabled:
 # libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
+# libOmxVideoDSMode depends on libOmxCore, which is a gnu makefile target
 # libmcs depends on libagm, which is decommonized
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 # libqtigefar depends on libar-pal, which is decommonized
@@ -524,6 +525,16 @@ vendor/etc/public.libraries.txt
 
 # NFC
 vendor/lib64/libsn100u_fw.so
+
+# OMX
+vendor/lib/libAlacSwDec.so
+vendor/lib/libApeSwDec.so
+vendor/lib/libFlacSwDec.so
+vendor/lib/libdsd2pcm.so
+vendor/lib64/libAlacSwDec.so
+vendor/lib64/libApeSwDec.so
+vendor/lib64/libFlacSwDec.so
+vendor/lib64/libdsd2pcm.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service

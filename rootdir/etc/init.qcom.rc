@@ -838,6 +838,11 @@ on property:vendor.rild.libpath=*
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
+service vendor.atfwd /vendor/bin/ATFWD-daemon
+    class late_start
+    user system
+    group system radio
+
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system

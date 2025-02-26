@@ -6,7 +6,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-TARGET_SUPPORTS_OMX_SERVICE := false
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Add common definitions for Qualcomm
@@ -246,6 +246,14 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libstagefrighthw
     init.qti.media.rc \
     init.qti.media.sh
 

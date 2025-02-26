@@ -197,6 +197,7 @@ persist.dbg.wfc_avail_ovr=1
 persist.radio.multisim.config=dsds
 persist.vendor.data.mode=concurrent
 persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.ecc_cloud=true
