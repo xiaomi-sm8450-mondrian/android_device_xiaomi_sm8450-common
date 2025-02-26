@@ -122,6 +122,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Media
+PRODUCT_PACKAGES += \
+    libcodec2_hidl_shim.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
@@ -139,6 +143,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer \
     XiaomiDolby
+
+# Dolby Props
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1 \
+    ro.vendor.audio.dolby.dax.support=true \
+    ro.vendor.audio.dolby.surround.enable=true \
+    ro.vendor.audio.dolby.vision.support=true
 
 # DRM
 PRODUCT_PACKAGES += \
