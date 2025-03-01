@@ -246,9 +246,20 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libmm-omxcore \
+    android.hardware.media.c2@1.2.vendor \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor \
+    libminijail \
+    libminijail.vendor \
     libOmxCore \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_soft_common.vendor \
     libstagefrighthw \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx.vendor \
+    libcodec2_hidl_shim.vendor \
     init.qti.media.rc \
     init.qti.media.sh
 
